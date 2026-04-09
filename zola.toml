@@ -34,7 +34,7 @@ style = "class"
 # Apparence
 theme_switcher = true
 default_theme = "dark"
-skin = ""
+skin = "lavender"
 #browser_theme_      = "#087e96"
 browser_theme_color = "#8320b4"
 
@@ -52,9 +52,9 @@ copy_button = true
 footnote_backlinks = true
 
 # Page d'accueil
-header = {title = "Salut ! Moi c'est Baptiste~", img = "", img_alt = ""}
+header = {title = "Salut ! Moi c'est Baptiste", img = "img/moi.webp", img_alt = "Photo de Baptiste"}
 section_path = "blog/_index.md"
-max_posts = 5
+max_posts = 3
 post_listing_date = "date"
 
 # Projets
@@ -63,8 +63,11 @@ max_projects = 3
 show_projects_first = false
 
 # Footer
-socials = []
-feed_icon = true
+socials = [
+    { name = "github", url = "https://github.com/BaptouK", icon = "github" },
+    { name = "linkedin", url = "https://linkedin.com/in/baptistedps", icon = "linkedin" },
+]
+feed_icon = false
 copyright = "© $CURRENT_YEAR $AUTHOR"
 
 # Métadonnées
