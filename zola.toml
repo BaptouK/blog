@@ -35,7 +35,7 @@ style = "class"
 theme_switcher = true
 default_theme = "dark"
 skin = ""
-#browser_theme_color = "#087e96"
+#browser_theme_      = "#087e96"
 browser_theme_color = "#8320b4"
 
 # Navigation
