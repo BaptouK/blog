@@ -1,5 +1,5 @@
 base_url = "https://blog.baptouk.live"
-title = "Blog de Baptiste"
+title = "/Baptiste"
 author = "Baptiste"
 theme = "tabi"
 default_language = "fr"
@@ -76,4 +76,4 @@ long_date_format = "%d %B %Y"
 short_date_format = "%-d %b %Y"
 
 # Sécurité
-enable_csp = true
+enable_csp = false
