@@ -1,0 +1,79 @@
+base_url = "https://blog.baptouk.live"
+title = "Blog de Baptiste"
+author = "Baptiste"
+theme = "tabi"
+default_language = "fr"
+compile_sass = true
+build_search_index = false
+generate_feeds = true
+feed_filenames = ["atom.xml"]
+taxonomies = [{name = "tags", feed = true}]
+
+[languages.en]
+title = "Baptiste's Blog"
+build_search_index = false
+generate_feeds = true
+feed_filenames = ["atom.xml"]
+taxonomies = [{name = "tags", feed = true}]
+
+[search]
+index_format = "elasticlunr_json"
+include_title = true
+include_description = true
+include_path = true
+include_content = true
+
+[markdown]
+external_links_class = "external"
+
+[markdown.highlighting]
+theme = "catppuccin-frappe"
+style = "class"
+
+[extra]
+# Apparence
+theme_switcher = true
+default_theme = "dark"
+skin = ""
+#browser_theme_color = "#087e96"
+browser_theme_color = "#8320b4"
+
+# Navigation
+menu = [
+    { name = "blog", url = "blog", trailing_slash = true },
+    { name = "archive", url = "archive", trailing_slash = true },
+    { name = "tags", url = "tags", trailing_slash = true },
+    { name = "projects", url = "projects", trailing_slash = true },
+]
+quick_navigation_buttons = true
+toc = true
+show_previous_next_article_links = true
+copy_button = true
+footnote_backlinks = true
+
+# Page d'accueil
+header = {title = "Salut ! Moi c'est Baptiste~", img = "", img_alt = ""}
+section_path = "blog/_index.md"
+max_posts = 5
+post_listing_date = "date"
+
+# Projets
+projects_path = "projects/_index.md"
+max_projects = 3
+show_projects_first = false
+
+# Footer
+socials = []
+feed_icon = true
+copyright = "© $CURRENT_YEAR $AUTHOR"
+
+# Métadonnées
+show_author = true
+show_reading_time = true
+show_date = true
+separator = "•"
+long_date_format = "%d %B %Y"
+short_date_format = "%-d %b %Y"
+
+# Sécurité
+enable_csp = true
