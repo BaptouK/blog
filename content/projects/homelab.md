@@ -40,41 +40,40 @@ Proxmox virtualise tout. L'infra se découpe en trois briques :
 ## Schéma réseau
 
 {% mermaid() %}
-graph TD
-    Internet["🌐 Internet"]
-    CF["☁️ Cloudflare DNS"]
-    Router["🔌 Box / Routeur"]
+flowchart TD
+    Internet(["Internet"])
+    CF(["Cloudflare DNS"])
+    Router(["Box / Routeur"])
 
     subgraph proxmox["Proxmox VE"]
-        direction TB
-        LXC_WG["🔒 LXC — WireGuard"]
+        LXC_WG["LXC WireGuard"]
 
         subgraph vm_web["VM Webserver"]
-            direction TB
-            Traefik["🔀 Traefik<br/><i>Reverse Proxy</i>"]
-            Dockhand["🐳 Dockhand<br/><i>Orchestration</i>"]
-            
-            subgraph containers["Conteneurs Docker"]                                                                                                    
-                Blog["📝 Site Web"]
-                Vault["🔐 Vaultwarden"]
-                Outline["📄 Outline"]
-                Sonar["📊 SonarQube"]
-                Autres["📦 Autres services"]
+            Traefik["Traefik - Reverse Proxy"]
+            Dockhand["Dockhand - Orchestration"]
+
+            subgraph containers["Conteneurs Docker"]
+                Blog["Site Web"]
+                Vault["Vaultwarden"]
+                Outline["Outline"]
+                Sonar["SonarQube"]
+                Autres["Autres services"]
             end
         end
 
-        VM_MC["🎮 VM — Minecraft"]
+        VM_MC["VM Minecraft"]
     end
 
-    Internet -->|"Requête HTTPS"| CF
-    CF -->|"DNS résolu"| Router
-    Router -->|"Port forwarding"| Traefik
-    Traefik -->|"Route par domaine"| containers
-    
-    Internet -->|"Connexion joueurs"| Router
-    Router -->|"Port 25565"| VM_MC
+    Internet -->|Requete HTTPS| CF
+    CF -->|DNS resolu| Router
+    Router -->|Port forwarding| Traefik
+    Traefik -->|Route par domaine| containers
 
-    LXC_WG -.->|"Accès distant sécurisé"| proxmox
+
+    Internet -->|Connexion joueurs| Router
+    Router -->|Port 25565| VM_MC
+    Router -->|Connexion vpn | LXC_WG
+
 {% end %}
 
 ## La stack en détail
