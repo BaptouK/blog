@@ -104,7 +104,7 @@ Couplé à **Cloudflare DNS**, les sous-domaines pointent vers mon IP et Traefik
 |---------|-------|
 | [**Blog / Zola**](https://www.getzola.org/) | Ce blog, hébergé en selfhost | 
 | [**Vaultwarden**](https://github.com/dani-garcia/vaultwarden) | Gestionnaire de mots de passe (compatible Bitwarden) | 
-| [**Outline**](https://www.getoutline.com/) | Wiki / base de connaissances |
+| [**Outline**](https://www.getoutline.com/) | Prise de Note / Collaboration en ligne |
 | [**SonarQube**](https://www.sonarsource.com/fr/products/sonarqube/) | Analyse de qualité de code | 
 | [**Dockhand**](https://dockhand.pro/) | Interface d'orchestration Docker |
 | [**FossFlow**](https://stan-smith.github.io/FossFLOW/) | Site web de création diagramme réseau | 
