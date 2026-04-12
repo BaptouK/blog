@@ -86,7 +86,7 @@ The project is developed in **2 stages**:
 | [GitHub Actions](https://github.com/features/actions) | — | CI/CD |
 
 #### Documentation
-
+                
 I use **Compodoc** to automatically generate technical documentation for the front-end from TypeScript code comments.
 
 The documentation is available online: [baptouk.github.io/PokeRixe](https://baptouk.github.io/PokeRixe/)

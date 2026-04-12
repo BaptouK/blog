@@ -13,3 +13,4 @@ Second-year computer science student, passionate about IT in general.
 <br>I made this blog to talk about what I'm working on and share my projects with better explanations.
 <br>I love testing, learning and sharing my discoveries.
 <br>Currently learning Rust and working on an online PvP Pokémon battle website.
+ <br>My Portfolio : [portfolio.baptouk.live](https://portfolio.baptouk.live)

@@ -13,3 +13,4 @@ max_projects = 3
 <br> J'ai fait ce blog pour parler sur ce quoi je travail et partager mes projets avec de meilleurs explications.
  <br>   J'aime tester, apprendre et partager mes découvertes. 
  <br>Actuellement j'apprend le Rust et travaille sur un site de combat pokémon en ligne en JcJ.
+ <br>Mon porfolio : [portfolio.baptouk.live](https://portfolio.baptouk.live)

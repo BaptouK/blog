@@ -21,3 +21,4 @@ tags = ["zola", "web", "programming"]
 I wanted a simple tool for a personal blog, no bloat. Zola checks all the boxes: lightweight, easy to pick up, and the [tabi](https://github.com/welpo/tabi) theme provides everything I need (dark mode, table of contents, shortcodes, SEO).
 
 The result: a static blog hosted on my [homelab](@/projects/homelab.md), deployed in seconds.
+        

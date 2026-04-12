@@ -81,7 +81,7 @@ flowchart TD
 ### Proxmox VE
 
 [Proxmox](https://www.proxmox.com/) handles virtualization. It isolates services in VMs and LXC containers, and lets me manage everything from a web interface.
-
+        
 [WireGuard](https://www.wireguard.com/) runs in an **LXC container** rather than a full VM — lighter and more than enough for a VPN tunnel. It lets me access all my internal services from anywhere, as if I were on my local network.
 
 ### Traefik — the reverse proxy
@@ -135,3 +135,4 @@ Internal services remain accessible only from the local network or via **WireGua
 This homelab is both a daily tool and a learning lab. I use it every day (passwords, wiki, code quality) and each addition is an opportunity to dig into a topic: networking, security, containerization, CI/CD.
 
 The principle: **if a service can run at home, it runs at home.**
+        
