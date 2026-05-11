@@ -1,5 +1,5 @@
 +++
-title = "PokeRixe — Backend"
+title = "PokeRixe"
 description = "Architecture and implementation of a real-time Pokémon battle server with AI."
 weight = 2
 [taxonomies]
@@ -15,6 +15,9 @@ mermaid = true
 PokeRixe is a **real-time turn-based Pokémon battle game**. The backend orchestrates battles via WebSocket, manages authentication, enriches data with PokéAPI, and provides AI analysis of matches.
 
 **Link to the site:** [pokerixe.baptouk.live](https://pokerixe.baptouk.live)
+
+**Source code**: [github.com/orgs/Pokerixe/repositories](https://github.com/orgs/Pokerixe/repositories)
+
 
 ---
 
